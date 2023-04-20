@@ -16,8 +16,6 @@ export const NodeContext = createContext<NodeContextProps>(defaultState)
 export const NodeProvider = ({ children }: { children: ReactNode }) => {
 
   const [data, setData] = useState<arrOfNodesProps[]>(arrOfNodes)
-
-  console.log(data)
   
   return (
     <NodeContext.Provider value={{ data, setData }}>

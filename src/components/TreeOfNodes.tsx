@@ -10,7 +10,7 @@ export const TreeOfNodes = ({ data }: TreeOfNodesProps) => {
 
   return (
     <ul>
-      {getRootNode.map(node => <Node key={node.nodeName} test={node} className={"border-none"} />)}
+      {getRootNode.map(node => <Node key={node.nodeName} node={node} className={"border-none w-[900px]"} />)}
     </ul>
   )
 }
